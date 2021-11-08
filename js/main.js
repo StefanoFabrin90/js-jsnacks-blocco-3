@@ -172,12 +172,20 @@ ${players[9].codiceplayers}`
 
 
 const greatPlayers = players.filter( (element) => {
-    if (element.mediapunti > 35 && element.tiridatre > 80){
-        return element.tiridatre, element.mediapunti;
-    }
-    return element.tiridatre, element.mediapunti;
+    return element.mediapunti > 35 && element.tiridatre > 80;
 });
 console.table(greatPlayers);
+
+document.getElementById('bestplayers1').innerHTML += `${greatPlayers[0].firstname} ${greatPlayers[0].lastname}`
+document.getElementById('bestplayers2').innerHTML += `${greatPlayers[1].firstname} ${greatPlayers[1].lastname}`
+document.getElementById('bestplayers3').innerHTML += `${greatPlayers[2].firstname} ${greatPlayers[2].lastname}`
+document.getElementById('bestplayers4').innerHTML += `${greatPlayers[3].firstname} ${greatPlayers[3].lastname}`
+document.getElementById('bestplayers5').innerHTML += `${greatPlayers[4].firstname} ${greatPlayers[4].lastname}`
+document.getElementById('bestplayers6').innerHTML += `${greatPlayers[5].firstname} ${greatPlayers[5].lastname}`
+document.getElementById('bestplayers7').innerHTML += `${greatPlayers[6].firstname} ${greatPlayers[6].lastname}`
+document.getElementById('bestplayers8').innerHTML += `${greatPlayers[7].firstname} ${greatPlayers[7].lastname}`
+document.getElementById('bestplayers9').innerHTML += `${greatPlayers[8].firstname} ${greatPlayers[8].lastname}`
+document.getElementById('bestplayers10').innerHTML += `${greatPlayers[9].firstname} ${greatPlayers[9].lastname}`
 
 
 
