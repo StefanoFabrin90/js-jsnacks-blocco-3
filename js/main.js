@@ -29,7 +29,7 @@ const players = [
         lastname: 'Mannion',
         age: 23,
         mediapunti: genCifreRandom (0, 50),
-        tiridatre: `${genCifreRandom (0, 100)}%`,
+        tiridatre: genCifreRandom (0, 100),
     },
     {
         codiceplayers: `${genCifreRandom (100, 200) + genLettere ()}`,
@@ -37,7 +37,7 @@ const players = [
         lastname: 'Belinelli',
         age: 33,
         mediapunti: genCifreRandom (0, 50),
-        tiridatre: `${genCifreRandom (0, 100)}%`,
+        tiridatre: genCifreRandom (0, 100),
     },
     {
         codiceplayers: `${genCifreRandom (100, 200) + genLettere ()}`,
@@ -45,7 +45,7 @@ const players = [
         lastname: 'Pajola',
         age: 23,
         mediapunti: genCifreRandom (0, 50),
-        tiridatre: `${genCifreRandom (0, 100)}%`,
+        tiridatre: genCifreRandom (0, 100),
     },
     {
         codiceplayers: `${genCifreRandom (100, 200) + genLettere ()}`,
@@ -53,7 +53,7 @@ const players = [
         lastname: 'Hervey',
         age: 26,
         mediapunti: genCifreRandom (0, 50),
-        tiridatre: `${genCifreRandom (0, 100)}%`,
+        tiridatre: genCifreRandom (0, 100),
     },
     {
         codiceplayers: `${genCifreRandom (100, 200) + genLettere ()}`,
@@ -61,15 +61,15 @@ const players = [
         lastname: 'Udoh',
         age: 30,
         mediapunti: genCifreRandom (0, 50),
-        tiridatre: `${genCifreRandom (0, 100)}%`,
+        tiridatre: genCifreRandom (0, 100),
     },
     {
         codiceplayers: `${genCifreRandom (100, 200) + genLettere ()}`,
-        firstname: 'kyle Weems',
-        lastname: 'Rossi',
+        firstname: 'kyle ',
+        lastname: 'Weems',
         age: 27,
         mediapunti: genCifreRandom (0, 50),
-        tiridatre: `${genCifreRandom (0, 100)}%`,
+        tiridatre: genCifreRandom (0, 100),
     },
     {
         codiceplayers: `${genCifreRandom (100, 200) + genLettere ()}`,
@@ -77,15 +77,15 @@ const players = [
         lastname: 'Teodosic',
         age: 34,
         mediapunti: genCifreRandom (0, 50),
-        tiridatre: `${genCifreRandom (0, 100)}%`,
+        tiridatre: genCifreRandom (0, 100),
     },
     {
         codiceplayers: `${genCifreRandom (100, 200) + genLettere ()}`,
-        firstname: 'Awudu Abas',
-        lastname: 'Rossi',
+        firstname: 'Awudu',
+        lastname: 'Abas',
         age: 23,
         mediapunti: genCifreRandom (0, 50),
-        tiridatre: `${genCifreRandom (0, 100)}%`,
+        tiridatre: genCifreRandom (0, 100),
     },
     {
         codiceplayers: `${genCifreRandom (100, 200) + genLettere ()}`,
@@ -93,7 +93,7 @@ const players = [
         lastname: 'Sampson',
         age: 28,
         mediapunti: genCifreRandom (0, 50),
-        tiridatre: `${genCifreRandom (0, 100)}%`,
+        tiridatre: genCifreRandom (0, 100),
     },
     {
         codiceplayers: `${genCifreRandom (100, 200) + genLettere ()}`,
@@ -101,7 +101,7 @@ const players = [
         lastname: 'Ceron',
         age: 23,
         mediapunti: genCifreRandom (0, 50),
-        tiridatre: `${genCifreRandom (0, 100)}%`,
+        tiridatre: genCifreRandom (0, 100),
     },
 ];
 console.table(players);
@@ -172,25 +172,12 @@ ${players[9].codiceplayers}`
 
 
 const greatPlayers = players.filter( (element) => {
-    if (element.mediapunti > 35 && element.tiridatre > 80%){
-        return element.tiridatre, element.mediapunti
+    if (element.mediapunti > 35 && element.tiridatre > 80){
+        return element.tiridatre, element.mediapunti;
     }
-    return element.tiridatre, element.mediapunti
+    return element.tiridatre, element.mediapunti;
 });
 console.table(greatPlayers);
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -211,27 +198,6 @@ function genLettere (){
     }
     return text;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
