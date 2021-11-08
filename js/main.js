@@ -28,7 +28,7 @@ const players = [
         firstname: 'Niccoló',
         lastname: 'Mannion',
         age: 23,
-        mediapunti: `${genCifreRandom (0, 50)}`,
+        mediapunti: genCifreRandom (0, 50),
         tiridatre: `${genCifreRandom (0, 100)}%`,
     },
     {
@@ -36,7 +36,7 @@ const players = [
         firstname: 'Marco',
         lastname: 'Belinelli',
         age: 33,
-        mediapunti: `${genCifreRandom (0, 50)}`,
+        mediapunti: genCifreRandom (0, 50),
         tiridatre: `${genCifreRandom (0, 100)}%`,
     },
     {
@@ -44,7 +44,7 @@ const players = [
         firstname: 'Alessandro',
         lastname: 'Pajola',
         age: 23,
-        mediapunti: `${genCifreRandom (0, 50)}`,
+        mediapunti: genCifreRandom (0, 50),
         tiridatre: `${genCifreRandom (0, 100)}%`,
     },
     {
@@ -52,7 +52,7 @@ const players = [
         firstname: 'Kevin',
         lastname: 'Hervey',
         age: 26,
-        mediapunti: `${genCifreRandom (0, 50)}`,
+        mediapunti: genCifreRandom (0, 50),
         tiridatre: `${genCifreRandom (0, 100)}%`,
     },
     {
@@ -60,7 +60,7 @@ const players = [
         firstname: 'Ekpe',
         lastname: 'Udoh',
         age: 30,
-        mediapunti: `${genCifreRandom (0, 50)}`,
+        mediapunti: genCifreRandom (0, 50),
         tiridatre: `${genCifreRandom (0, 100)}%`,
     },
     {
@@ -68,7 +68,7 @@ const players = [
         firstname: 'kyle Weems',
         lastname: 'Rossi',
         age: 27,
-        mediapunti: `${genCifreRandom (0, 50)}`,
+        mediapunti: genCifreRandom (0, 50),
         tiridatre: `${genCifreRandom (0, 100)}%`,
     },
     {
@@ -76,7 +76,7 @@ const players = [
         firstname: 'Milos',
         lastname: 'Teodosic',
         age: 34,
-        mediapunti: `${genCifreRandom (0, 50)}`,
+        mediapunti: genCifreRandom (0, 50),
         tiridatre: `${genCifreRandom (0, 100)}%`,
     },
     {
@@ -84,7 +84,7 @@ const players = [
         firstname: 'Awudu Abas',
         lastname: 'Rossi',
         age: 23,
-        mediapunti: `${genCifreRandom (0, 50)}`,
+        mediapunti: genCifreRandom (0, 50),
         tiridatre: `${genCifreRandom (0, 100)}%`,
     },
     {
@@ -92,7 +92,7 @@ const players = [
         firstname: 'JaKarr',
         lastname: 'Sampson',
         age: 28,
-        mediapunti: `${genCifreRandom (0, 50)}`,
+        mediapunti: genCifreRandom (0, 50),
         tiridatre: `${genCifreRandom (0, 100)}%`,
     },
     {
@@ -100,7 +100,7 @@ const players = [
         firstname: 'Marco',
         lastname: 'Ceron',
         age: 23,
-        mediapunti: `${genCifreRandom (0, 50)}`,
+        mediapunti: genCifreRandom (0, 50),
         tiridatre: `${genCifreRandom (0, 100)}%`,
     },
 ];
@@ -171,14 +171,11 @@ ${players[9].codiceplayers}`
 // 5. Creare un nuovo array con i giocatori che hanno una media di punti superiore a 35 e la percentuale di successo per i tiri da 3 punti superiore all’80%.
 
 
-// const greatPlayers = players.map ( (element) => {
-   
-// //     if ((mediapunti > 35) && (tiridatre > 80)) {
-// //         greatPlayers.push(element);
-// //     }
-// //     return element;
-// // });
-// // console.log(greatPlayers);
+const greatPlayers = players.filter( (element) => {
+    return element.mediapunti > 35
+
+});
+console.table(greatPlayers);
 
 
 
