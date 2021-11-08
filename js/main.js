@@ -25,14 +25,147 @@
 const players = [
     {
         codiceplayers: genCifreRandom (100, 200) + genLettere (),
-        firstname: 'Paolo',
+        firstname: 'Niccoló',
+        lastname: 'Mannion',
+        age: 23,
+        mediapunti: genCifreRandom (0, 50),
+        tiridatre: genCifreRandom (0, 100),
+    },
+    {
+        codiceplayers: genCifreRandom (100, 200) + genLettere (),
+        firstname: 'Marco',
+        lastname: 'Belinelli',
+        age: 33,
+        mediapunti: genCifreRandom (0, 50),
+        tiridatre: genCifreRandom (0, 100),
+    },
+    {
+        codiceplayers: genCifreRandom (100, 200) + genLettere (),
+        firstname: 'Alessandro',
+        lastname: 'Pajola',
+        age: 23,
+        mediapunti: genCifreRandom (0, 50),
+        tiridatre: genCifreRandom (0, 100),
+    },
+    {
+        codiceplayers: genCifreRandom (100, 200) + genLettere (),
+        firstname: 'Kevin',
+        lastname: 'Hervey',
+        age: 26,
+        mediapunti: genCifreRandom (0, 50),
+        tiridatre: genCifreRandom (0, 100),
+    },
+    {
+        codiceplayers: genCifreRandom (100, 200) + genLettere (),
+        firstname: 'Ekpe',
+        lastname: 'Udoh',
+        age: 30,
+        mediapunti: genCifreRandom (0, 50),
+        tiridatre: genCifreRandom (0, 100),
+    },
+    {
+        codiceplayers: genCifreRandom (100, 200) + genLettere (),
+        firstname: 'kyle Weems',
         lastname: 'Rossi',
+        age: 27,
+        mediapunti: genCifreRandom (0, 50),
+        tiridatre: genCifreRandom (0, 100),
+    },
+    {
+        codiceplayers: genCifreRandom (100, 200) + genLettere (),
+        firstname: 'Milos',
+        lastname: 'Teodosic',
+        age: 34,
+        mediapunti: genCifreRandom (0, 50),
+        tiridatre: genCifreRandom (0, 100),
+    },
+    {
+        codiceplayers: genCifreRandom (100, 200) + genLettere (),
+        firstname: 'Awudu Abas',
+        lastname: 'Rossi',
+        age: 23,
+        mediapunti: genCifreRandom (0, 50),
+        tiridatre: genCifreRandom (0, 100),
+    },
+    {
+        codiceplayers: genCifreRandom (100, 200) + genLettere (),
+        firstname: 'JaKarr',
+        lastname: 'Sampson',
+        age: 28,
+        mediapunti: genCifreRandom (0, 50),
+        tiridatre: genCifreRandom (0, 100),
+    },
+    {
+        codiceplayers: genCifreRandom (100, 200) + genLettere (),
+        firstname: 'Marco',
+        lastname: 'Ceron',
         age: 23,
         mediapunti: genCifreRandom (0, 50),
         tiridatre: genCifreRandom (0, 100),
     },
 ];
 console.table(players);
+
+document.querySelector('.player1').innerHTML += 
+`${players[0].firstname}
+${players[0].lastname}: etá
+${players[0].age}: codice giocatore:
+${players[0].codiceplayers}`
+
+document.querySelector('.player2').innerHTML += 
+`${players[1].firstname}
+${players[1].lastname}: etá
+${players[1].age}: codice giocatore:
+${players[1].codiceplayers}`
+
+document.querySelector('.player3').innerHTML += 
+`${players[2].firstname}
+${players[2].lastname}: etá
+${players[2].age}: codice giocatore:
+${players[2].codiceplayers}`
+
+document.querySelector('.player4').innerHTML += 
+`${players[3].firstname}
+${players[3].lastname}: etá
+${players[3].age}: codice giocatore:
+${players[3].codiceplayers}`
+
+document.querySelector('.player5').innerHTML += 
+`${players[4].firstname}
+${players[4].lastname}: etá
+${players[4].age}: codice giocatore:
+${players[4].codiceplayers}`
+
+document.querySelector('.player6').innerHTML += 
+`${players[5].firstname}
+${players[5].lastname}: etá
+${players[5].age}: codice giocatore:
+${players[5].codiceplayers}`
+
+document.querySelector('.player7').innerHTML += 
+`${players[6].firstname}
+${players[6].lastname}: etá
+${players[6].age}: codice giocatore:
+${players[6].codiceplayers}`
+
+document.querySelector('.player8').innerHTML += 
+`${players[7].firstname}
+${players[7].lastname}: etá
+${players[7].age}: codice giocatore:
+${players[7].codiceplayers}`
+
+document.querySelector('.player9').innerHTML += 
+`${players[8].firstname}
+${players[8].lastname}: etá
+${players[8].age}: codice giocatore:
+${players[8].codiceplayers}`
+
+document.querySelector('.player10').innerHTML += 
+`${players[9].firstname}
+${players[9].lastname}: etá
+${players[9].age}: codice giocatore:
+${players[9].codiceplayers}`
+
 
 
 
