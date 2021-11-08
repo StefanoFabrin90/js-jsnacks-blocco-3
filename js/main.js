@@ -173,6 +173,7 @@ ${players[9].codiceplayers}`
 
 const greatPlayers = players.filter( (element) => {
     if (element.mediapunti > 35 && element.tiridatre > 80){
+        greatPlayers.push()
     }
 });
 console.table(greatPlayers);
